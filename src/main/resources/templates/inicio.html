@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>*</title>
+<link href="/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<form method="post" action="/registro">
+
+			<h1 th:text="${texto}">Registrate</h1>
+<label>Nombre:
+		<input type="text" th:value="nombre" th:name="nombre"></label>
+		
+		<label>Apellidos:
+		<input type="text" th:value="apellidos" th:name="apellidos"></label>
+		
+		<label>Email:
+		<input type="email" th:value="email" th:name="email"></label>	
+	<label>Contraseña:
+		<input type="password" th:value="contrasena" th:name="contrasena"></label>
+				
+								<label>Código postal:
+		<input type="text" th:value="cp" th:name="cp"></label>
+		<label>País:
+		<input type="text" th:value="pais" th:name="pais"></label>
+		
+
+		</div>
+		</div>	
+			
+			
+	<div style="text-align: center;">
+	<button type="submit" style="width:60%;">Enviar</button></div>
+</form>
+</body>
+</html>

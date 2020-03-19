@@ -10,22 +10,22 @@ import javax.persistence.Table;
 public class Usuario {
 
 	@Id
-    @Column(name = "email")
+    @Column
     private String email;
 
 	@Column(name = "password")
     private String pw;
 	
-    @Column(name = "nombre")
+    @Column
     private String nombre;
 	
-    @Column(name = "apellidos")
+    @Column
     private String apellidos;
     
-    @Column(name = "cp")
+    @Column
     private String cp;
     
-    @Column(name = "pais")
+    @Column
     private String pais;
     
     

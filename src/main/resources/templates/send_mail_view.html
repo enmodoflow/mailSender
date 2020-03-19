@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1>Enviar e-mail</h1>
+			</div>
+			<form method="POST" th:action="@{/sendMail}" id="emailForm"
+				class="container">
+				<div>
+					<label>Nombre</label>
+					<div>
+						<input type="text" name="name" placeholder="Nombre" />
+					</div>
+				</div>
+				<div>
+					<label>Correo</label>
+					<div>
+						<div>@</div>
+						<input type="text" name="mail" placeholder="Correo electónico" />
+					</div>
+				</div>
+				<div>
+					<label>Assunto</label>
+					<div>
+						<div></div>
+						<input type="text" name="subject" placeholder="Assunto" />
+					</div>
+				</div>
+				<div>
+					<label>Mensaje</label>
+					<textarea rows="5" name="body"></textarea>
+				</div>
+				<div>
+					<button type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

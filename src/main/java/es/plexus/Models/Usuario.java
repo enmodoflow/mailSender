@@ -1,4 +1,4 @@
-package es.plexus;
+package es.plexus.Models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

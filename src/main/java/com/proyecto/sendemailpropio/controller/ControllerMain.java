@@ -23,7 +23,7 @@ public class ControllerMain {
     public String sendMail(@RequestParam("name") String name, @RequestParam("mail") String mail, @RequestParam("subject") String subject, @RequestParam("body") String body){
 
         String message = body +"\n\n Datos de contacto: " + "\nNombre: " + name + "\nE-mail: " + mail;
-        mailService.sendMail("onlylearnenglish2017@gmail.com", "puedesercualquiera@outlook.es",subject,message);
+        mailService.sendMail("envioemail2020@gmail.com", "onlylearnenglish2017@gmail.com", subject,message);
 
         return "send_mail_view";
     }

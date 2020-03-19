@@ -8,39 +8,77 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<link rel="stylesheet" href="/src/main/resources/static/style.css">
+
 <title>*</title>
+
+<!-- FUENTE GOOGLE -->
+<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+
 <link href="/css/style.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-<form method="post" action="/registro">
 
-			<h1 th:text="${texto}">Registrate</h1>
-<label>Nombre:
-		<input type="text" th:value="nombre" th:name="nombre"></label>
-		
-		<label>Apellidos:
-		<input type="text" th:value="apellidos" th:name="apellidos"></label>
-		
-		<label>Email:
-		<input type="email" th:value="email" th:name="email"></label>	
-	<label>Contraseña:
-		<input type="password" th:value="password" th:name="password"></label>
-				
-								<label>Código postal:
-		<input type="text" th:value="cp" th:name="cp"></label>
-		<label>País:
-		<input type="text" th:value="pais" th:name="pais"></label>
-		
+<div class="formulario">
+	<form method="post" action="/registro">
 
-		</div>
-		</div>	
-			
-			
-	<div style="text-align: center;">
-	<button type="submit" style="width:60%;">Enviar</button></div>
+	<h1 th:text="${texto}">Registrate</h1>
+
+	<div class="primeraFila">
+	<div class="input">
+	<label>
+	<input type="text" placeholder="Nombre" th:value="nombre" th:name="nombre"></label>
+	</div>
+
+	<div class="input">
+	<label>
+	<input type="text" placeholder="Apellidos" th:value="apellidos" th:name="apellidos"></label>
+	</div>
+	</div>
+
+	<div class="segundaFila">
+	<div class="input">
+	<label>
+	
+	
+	<input type="email" placeholder="Email" th:value="email" th:name="email"></label>	
+	
+	
+</div>
+<div class="dominio">@gmail.com</div>
+	</div>
+
+	<div class="terceraFila">
+	<div class="input">
+	<label>
+	<input type="password" placeholder="Password" th:value="password" th:name="password"></label>
+	</div>
+	</div>
+
+
+	<div class="cuartaFila">
+	<div class="inputPais">
+	<label>
+	<input type="text" placeholder="Pais" th:value="pais" th:name="pais"></label>
+	</div>
+
+	<div class="inputCp">
+	<label>
+	<input type="text" placeholder="CP" th:value="cp" th:name="cp"></label>
+	</div>
+	</div>
+	
+	
+		
+		
+<div class="boton">
+<button type="submit" >Enviar</button></div>
 </form>
+</div>	
+
+
 </body>
 </html>

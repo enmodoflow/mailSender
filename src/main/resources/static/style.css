@@ -1,1 +1,116 @@
 @charset "ISO-8859-1";
+
+*{font-family: 'Baloo 2', cursive;}
+
+body{display: flex;justify-content: center;}
+
+.formulario{
+    margin-top: 50px;
+    text-align:  center;
+    background-color: rgba(117, 248, 117, 0.658);
+    padding: 10px;
+    border-radius: 5px;}
+
+.formulario form input{
+    padding: 7.5px;
+    border: none;
+    
+    background-color: rgba(112, 206, 112, 0.877);}
+
+.primeraFila{display: flex;}
+
+.primeraFila input{width: 100px; border-radius: 5px;margin: 8px;}
+
+.segundaFila{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.segundaFila input{ width: 133px; border-radius: 5px 0px 0px 5px;  }
+
+.dominio{
+    background-color: rgba(112, 206, 112, 0.877);
+    color: black;
+   font-size: 14px;
+    width: 97px;
+    height: 28.5px;
+    padding-top: 8px;
+    padding-right: 5px;
+    border-radius: 0px 5px 5px 0px;
+    
+   
+
+}
+
+.dominioMail{
+    background-color: rgba(112, 206, 112, 0.877);
+    color: black;
+   font-size: 14px;
+    width: 97px;
+    height: 27.5px;
+    padding-top: 6px;
+    padding-right: 5px;
+    border-radius: 0px 5px 5px 0px;
+    
+   
+
+}
+
+.terceraFila input{width: 230px; border-radius: 5px; margin: 8px;}
+
+.cuartaFila{display: flex;justify-content: center; }
+
+.cuartaFila input{
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.inputCp input{width: 65px;}
+
+.inputPais input{width: 130px;}
+
+.boton button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(112, 206, 112, 0.877);
+    color: white;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;}
+
+textarea{
+    background-color: rgba(112, 206, 112, 0.877);
+    border: none;
+    border-radius: 5px;
+    width: 210px;
+    margin-top: 10px;
+}
+
+
+.primeraFilaMail input{
+margin: 10px;
+border-radius: 5px;
+}
+
+.segundaFilaMail{
+    display: flex;
+    justify-content: center;
+}
+.segundaFilaMail input{
+    border-radius: 5px 0px 0px 5px;
+    width: 95px;
+    
+}
+
+.terceraFilaMail{
+    display: flex;
+    justify-content: center;
+}
+
+.terceraFilaMail input{
+    border-radius: 5px;
+    margin: 10px;
+}
+

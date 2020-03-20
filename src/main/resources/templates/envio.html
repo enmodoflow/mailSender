@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="..static/css/style.css" th:href="@{/static/css/style.css}"/>
+</head>
+<body>
+
+
+		
+				
+
+			<div class="formulario">
+
+				<h1>Enviar e-mail</h1>
+
+			<form method="POST" th:action="@{/envio}" id="emailForm"
+				class="container">
+				<div class="primeraFilaMail">
+					
+					<div class="input">
+						<input type="text" name="name" placeholder="Nombre" />
+					</div>
+				</div>
+				<div class="segundaFilaMail">
+			
+					<div class="input">
+						
+						<input type="text" name="mail" placeholder="Correo electónico" />
+					</div>
+
+					<div class="dominioMail">@gmail.com</div>
+
+				</div>
+				<div class="terceraFilaMail">
+					
+					<div class="input">
+						
+						<input type="text" name="subject" placeholder="Assunto" />
+					</div>
+				</div>
+				<div>
+					
+					<textarea rows="5" name="body"></textarea>
+				</div>
+				<div class="boton">
+					<button type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+</body>
+
+</html>

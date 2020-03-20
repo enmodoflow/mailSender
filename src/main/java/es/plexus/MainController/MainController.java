@@ -21,18 +21,42 @@ public class MainController {
 
     @GetMapping("/")
     public String index(){
-        return "send_mail_view";
+        return "envio";
     }
+    
 
-    @PostMapping("/sendMail")
+	@RequestMapping("/registro")
+	public String registro(
+			@RequestParam("nombre") String nombre,
+			@RequestParam("apellidos") String apellidos,
+			@RequestParam("email") String email,
+			@RequestParam("password") String password,
+			@RequestParam("pais") String dni,
+			@RequestParam("cp") String cp,
+
+			Model model) {
+		String emailOk = email + "@gmail.com";
+		return "inicio";
+
+	}
+
+	@RequestMapping("/login")
+	public String login(
+			@RequestParam("email") String email,
+			@RequestParam("password") String password,
+			Model model) {
+
+		return "login";
+	}
+    
+    
+    @PostMapping("/envio")
     public String sendMail(@RequestParam("name") String name, @RequestParam("mail") String mail, @RequestParam("subject") String subject, @RequestParam("body") String body){
 
         String message = body +"\n\n Datos de contacto: " + "\nNombre: " + name + "\nE-mail: " + mail;
-        mailService.sendMail("envioemail2020@gmail.com", "fotospimpam@gmail.com", subject,message);
+        String emailOk = mail + "@gmail.com";
+        mailService.sendMail("envioemail2020@gmail.com", emailOk, subject,message);
 
-        return "send_mail_view";
+        return "envio";
     }
-    
-    
-    
 }
